@@ -5,14 +5,14 @@
 <meta charset="UTF-8">
 <meta name="author" content="Ishaan" >
 <meta name="description" content="My Webpage">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<title> Work Webpage </title>
+<title> Job Openings </title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+NL:wght@100..400&display=swap" rel="stylesheet">
-
+<link rel="icon" href="/jovian_favicon.png" type="image/x-icon">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -23,13 +23,14 @@
     <header>
 
     <div id="navbar">
-        <img src="https://jovian.com/jovian_logo.svg" alt="Logo" id="logo">
+      <img src="/logo.png" alt="Logo" id="logo">
+        <img src="https://jovian.com/jovian_logo.svg"  height="100" alt="Logo With Text" id="logo-with-text">
 
     
 
     </div>
    
-    <img id="banner" src="/banner.jpg" alt="Banner" width="400" height="300"> <hr>
+    <img id="banner" src="banner.jpg" alt="Banner" width="400"> <hr>
     </header>
     <main>
     <h1> About Jovian</h1>
@@ -51,7 +52,7 @@
 
       </div> 
       <div id="image">
-        <img id="team-image" src="/team.jpg"  alt="Team" >
+        <img id="team-image" src="team.jpg" alt="Team" >
       </div>    
 
 
@@ -66,8 +67,73 @@
    
     
     <h2 id="oppurtunity">Job Opportunities</h2>
+    <div id="job-area">
 
-    <div id="jobs">
+
+
+  <div id="jobs-list">
+
+      <div class="job1">
+              <div class="job-title"> Frontend Developer</div>
+              <div class="job-detail"> Bengaluru, India</div>
+              <div class="job-detail"> ₹12,00,000 </div>
+              <div class="job-detail"> Posted Mar 3, 2023 </div>
+        </div>
+      <div class="job2">
+              <div class="job-title"> Fullstack Developer</div>
+              <div class="job-detail"> New Delhi, India</div>
+              <div class="job-detail"> ₹15,00,000 </div>
+              <div class="job-detail"> Posted Feb 1, 2023 </div>
+        </div>
+      <div class="job3">
+              <div class="job-title"> Data Scientist</div>
+              <div class="job-detail"> San Francisco, USA</div>
+              <div class="job-detail"> $175,000</div>
+              <div class="job-detail"> Posted Mar 3, 2023 </div>
+        </div>
+      <div class="job4">
+              <div class="job-title"> Machine Learning Engineer</div>
+              <div class="job-detail"> Remote</div>
+              <div class="job-detail"> $80,000 </div>
+              <div class="job-detail"> Posted Sep 19, 2022 </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div> <!-- parent div for job card -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
@@ -140,7 +206,7 @@
 
 
 
-        <h2> Submit Your Application </h2>
+        <h2 id="application"> Submit Your Application </h2>
         <form id="application-form">
 
             <div class="form-group">
@@ -234,12 +300,13 @@
        
         </div>
         <footer id="footer">
-            <hr><div id="footer-links">
-                <ul>
-                    <li> <a href="https://jovian.com/learn" target="_blank">Courses </a></li>
-                    <li> <a href="https://jovian.com/learn" target="_blank">Programs</a></li>
-                    <li> <a href="https://www.youtube.com/@jovianhq" target="_blank"> Youtube</a> </li>
-                </ul> </div>
+            <hr>
+            <div id="footer-links">
+               
+                    <div id="courses"> <a href="https://jovian.com/learn" target="_blank">Courses </a></div>
+                    <div id="programs"> <a href="https://jovian.com/learn" target="_blank">Programs</a></div>
+                    <div id="youtube"> <a href="https://www.youtube.com/@jovianhq" target="_blank"> Youtube</a> </div>
+                 </div>
         
             <div id="copyright">&nbsp; &nbsp;     &copy; 2024, Jovian </div>
   

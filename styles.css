@@ -1,94 +1,327 @@
+  /* Base Styles (extra small devices- mobile) */
+  html{ font-size: 14px;}
+
   body { margin: 0;
-         padding: 0;
-         background-color: #f9fafb;
-          color: #374151;
-          font-family: "Oswald", sans-serif;
-    line-height: 1.4;
-   font-weight: 500;
-          
-}
-   
-  header { background-color: #FFFF
-    ;}
+    padding: 0;
+    background-color: #f9fafb;
+     color: #374151;
+     font-family: "Oswald", sans-serif;
+line-height: 1.4;
+font-weight: 500;
+font-size: 1rem;}
 
-    h1,h2,h3,h4, h5 { text-transform: uppercase;
-          font-weight: 600;
-          color: #030712 ;
-    }
-  ol { font-style: italic;}
-
-h1 { text-align: center;
+h1,h2,h3,h4, h5 { text-transform: uppercase;
+  font-weight: 600;
+  color: #030712 ;
 }
-  #navbar{ padding: 8px; width: 40;}
- #logo { height:40px;
-}   
+
+ h1{ font-size: 2.5rem ;}
+ h2{ font-size: 2rem ;}
+ h3{ font-size: 1.75rem ;}
+ h4{ font-size: 1.5rem ;}
+ h5{ font-size: 1.25rem ;}
+ h6{ font-size: 1rem ;}
+
+ a{ text-decoration: none;
+  color: dodgerblue; 
+ } 
+
+ a:visited{ color:#818cf8;}
+ a:hover{ color: #a5b4fc ;}
+ a:active{ color: #d12929;}
+ a:focus { color: #a5b4fc ;}
+
+ #navbar{ padding: 8px; width: 40;}  
+
+ #logo{ display: block;
+        height: 40px;}
+ #logo-with-text{ display: none;}
+
+ #banner{ width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  height: 150px ;
+ }
+
+ h1 { text-align: center;
+  margin: 12px 0;
+ }
+hr{ width: 100%;}
+
  #about { display: flex;
-       max-width: 800px; 
-       margin: 0 auto;
-       padding: 8px;
+  flex-direction: column;
+  max-width: 500px; 
+  margin: 0 auto;
+  padding: 8px;
 }
- #description{width: 50%;
+
+#description{font-size: 1.25rem;}
+  #oppurtunity{ margin-bottom: 8px;}
+
+
+
+hr { margin: 0;}
+#team-image { width: 100%;
+          border-radius: 5px;}
+
+
+  h2{ text-align: center;}
+
+  #job-area{ max-width: 500px;
+    margin: 0 auto; 
+    padding: 0 8px;
    
-     padding-right:15px ;
-}
-  #image {  width: 50%;}
+    }
 
-#banner{ width: 100%;
-       object-fit: cover;
-       margin: 0;
-       padding: 0;
-      }
-      hr { margin: 0;}
- #team-image { width: 100%;
+   #jobs-list{ display: block;
+            }
+    
+   #table{ display: none;}
+    .job1{ border: 1px solid gray;
+         margin-bottom: 8px;
+        border-radius: 5px;
+        padding: 4px;
+        background-color: #dbeafe;
+       }
+    .job2{ border: 1px solid gray;
+         margin-bottom: 8px;
+        border-radius: 5px;
+        padding: 4px;
+        background-color: ghostwhite;
+       }
+    .job3{ border: 1px solid gray;
+         margin-bottom: 8px;
+        border-radius: 5px;
+        padding: 4px;
+        background-color: #dbeafe;
+       }
+    .job4{ border: 1px solid gray;
+         margin-bottom: 8px;
+        border-radius: 5px;
+        padding: 4px;
+        background-color: ghostwhite;
+       }
 
-}
 
-   h2 { text-align: center;}
+    .job-title{ margin-top: 4px;
+                font-weight: 600;
+                font-family: Oswald sans-serif ;
+                color: #374151;
 
-   #jobs { max-width: 800px;
-          margin: 0 auto; 
-          padding: 0 8px;
-          }
+    }
 
-  h3 { margin-bottom:8px ;
-       margin-top: 0;
-  }  
+    .job-detail { margin-top: 2px;
+                 color: #6B7280;}
 
-  .apply { float: right;}
+
+    /* Form area */
+          
+               #application-form{ margin: 0 auto; 
+              font-weight: 600; 
+            width: 500px;}
+
+              .form-group{ margin-top: 16px;  }
+
+
+
+              textarea{     height: 150px;
+               width: 80%;
+               margin-top: 10px;
+               margin-bottom: 20px;
+               padding: 16px; 
+               border-radius: 5px;
+              
+    
+    }
+
+    input[ type="submit"] {  border: 2px solid gray;
+                             background-color: #4f46e5;
+                             color: #f1f5f9;
+                            padding: 2px;
+                            border-radius: 5px;
+                           cursor: pointer;
+                          }
+
+  label[for="reset"] { margin-left: 32px;
+    margin-top: 16px;
+      text-align: left;}
+
+  label[ for="submit"] {  margin-top: 3px;}
+  label[for="terms"] { margin-bottom: 30px;
+                       margin-top: 0;} 
+
+   #reset{ text-align: right;}
+    input[ type="reset"] {  border: 2px solid gray;
+                             background-color: #4f46e5;
+                             color: #f1f5f9;
+                           
+                             margin-left: 32px;
+                            padding: 2px; 
+                             border-radius: 5px; 
+                             cursor: pointer;}
+
+    input[ type="checkbox"] { background-color: #f9fafb ;
+     margin-top: 1px; 
+    padding: 1px; 
+    width: 10px;
+    transform: scale(1.5);
+     
+  }
+  #submit-reset{ display: flex;
+                margin: 0 auto;
+              width: 500px;
+            justify-content: space space-around;}
+              
+
+            .form-group input, select, textarea{ width: 90%;
+                   padding: 8px;
+                   font-size: 1.25rem;
+                   margin-top: 4px;
+                   border-radius: 5px;
+                   border: 1px solid gray;
+            
+            
+            }
+                /* #submit{ flex: 2;}
+                #reset{ flex: 1;} */
+
+
+                   /* Footer Area */
+
+
+
+   footer{ background-color: ghostwhite; text-align: center;
+        margin: 32px 0 0 0;
+      width: 100%;}
   
-        /* Link Area */
+  #footer-links li{   
+      display: inline;
+    padding: 8px;
+    margin: 0 16px;
+  }
+   #copyright { color: gray;
+    text-align: center;
+    margin-top: 8px;
+     
+   }
+   #footer-links{ display: flex;
+                  flex-direction: row;
+                    }
+    #courses{ flex: 1;}
+    #programs{ flex: 1;}
+     #youtube{flex: 1;}
  
-        a{ text-decoration: none;
-     color: dodgerblue; 
-    } 
 
-    a:visited{ color:#818cf8;}
-    a:hover{ color: #a5b4fc ;}
-    a:active{ color: #d12929;}
-    a:focus { color: #a5b4fc ;}
+  /* Small Devices - Tablets */
+
+  @media screen and ( min-width:576px) { 
+    html{ font-size: 16px;}
+   #logo{ display: none;}
+   #logo-with-text{ display: block;
+                    height: 40px;}
+                    h1 { text-align: center;
+                      margin: 16px 0;
+                     }
+                     #banner{ height: 200px;}
+
+                     #about { display: flex;
+                      flex-direction: column;
+                      max-width: 500px; 
+                      margin: 0 auto;
+                      padding: 8px;
+                    }
+                    
+                    #description{font-size: 1.25rem;
+                     }
+                    #oppurtunity{ margin-bottom: 12px;}
+                    
+
+
+                     hr { margin: 0;}
+                #team-image { width: 100%;
+                  border-radius: 5px;}
+                  
+                  #jobs { max-width: 500px;
+                    margin: 0 auto; 
+                    padding: 0 8px;
+                    }
+                  #jobs-list{ display: block;}
     
+                   #table{ display: none;}
+               
+                   .form-group input, select{ width: auto;
+                    padding: 8px;
+                    font-size: 1.25rem;
+                    margin-top: 4px;
+                    border-radius: 5px;
+                    border: 1px solid gray;
+             
+             
+             }
 
+             .form-group textarea{ width: 80%;}
+
+  }
+
+ 
+  
+  
+ 
+ 
+  /* Medium Devices ( Laptops) */
+
+  @media screen and ( min-width: 768px) { h1 { text-align: center;
+    margin: 20px 0;}
+    #about { display: flex;
+      flex-direction:row;
+      max-width: 1000px; 
+      margin: 0 auto;
+      padding: 8px;
+    }
+    #description{font-size: 1.25rem;
+            width: 50%;
+
+          padding-right: 16px;}
+
+          #image {  width: 50%;}
+          hr { margin: 0;}
+          #team-image { width: 100%;
+            border-radius: 5px;}
+
+
+          #oppurtunity{ margin-bottom: 20px;}
+
+
+            #jobs { max-width: 800px;
+              margin: 0 auto; 
+              padding: 0 8px;
+              }
          
+            #jobs-list{ display: none;}
     
-    /* Table Area */
+            #table{ display: table;}
 
-    #table{ margin: 0 auto;
+
+              /* Table Area */
+
+     #table{ margin: 0 auto;
           border: 1px solid gray;
           width: 100%;
           border-collapse: collapse;
-        }
+        } 
 
 
     .job-table{ text-align: left;
           padding-left: 4px ;
-        border: 1px solid gray;}
+        border: 1px solid gray;} 
       
       
     .jobs-header-row {  border: 1px solid gray;
             padding: 8px;
             background-color: aliceblue;
             text-align: center;
-            }
+            } 
 
 
        .jobs-header-row th { border: 1px solid
@@ -112,12 +345,122 @@ h1 { text-align: center;
          
              text-align: center;}
        
+           #application{ margin-top: 20px;}
+            
            
-           
-           
+
+
+
+     }
+
+
+
+
+
+
+
+
+
+  /* Large Devices ( Desktops) */
+
+  @media screen and ( min-width: 992px) {
+ /* CSS Rules */
+
+ #banner{ height: 300px;}
+
+  }
+ 
+ 
+  /* Extra Large Devices ( Large Desktops) */
+
+  @media screen and ( min-width: 1200px) {
+ /* CSS Rules */
+
+  #banner{ height: 320px;}
+  }
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* 
+          
+}
+
+ 
+
+
+   
+  header { background-color: #FFFF
+    ;}
+
+   
+  ol { font-style: italic;}
+
+
+
+ #logo { height:40px;
+}   
+ 
+ 
+}
+ 
+}
+
+   h2 { text-align: center;}
+
+  
+
+  h3 { margin-bottom:8px ;
+       margin-top: 0;
+  }  
+
+  .apply { float: right;}
+  
+        /* Link Area */
+ 
+        /*
+
+         
+    
+  
              /* Form area */
           
-               #application-form{ margin: 0 auto; 
+               /* #application-form{ margin: 0 auto; 
               font-weight: 600; }
 
               .form-group{ margin-top: 16px;  }
@@ -146,9 +489,9 @@ h1 { text-align: center;
       text-align: left;}
 
   label[ for="submit"] {  margin-top: 3px;}
-  label[for="terms"] { margin-bottom: 30px;}
+  label[for="terms"] { margin-bottom: 30px;} */
 
-  #reset{ text-align: right;}
+  /* #reset{ text-align: right;}
     input[ type="reset"] {  border: 2px solid gray;
                              background-color: #4f46e5;
                              color: #f1f5f9;
@@ -167,25 +510,11 @@ h1 { text-align: center;
   }
   #submit-reset{ display: flex;
                 margin: 0 auto;}
-
+ */
 
       
              
 
 
 
-         /* Footer Area */
-
-
-
-  footer{ background-color: ghostwhite; text-align: center;
-        margin: 32px 0 0 0;}
-  
-  #footer-links li{   
-      display: inline;
-    padding: 8px;
-    margin: 0 16px;
-  }
-   #copyright { color: gray;
-     
-   }
+      
